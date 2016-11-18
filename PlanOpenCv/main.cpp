@@ -82,17 +82,14 @@ void MouseCallBackFunc(int event, int x, int y, int flags, void* userdata)
 		tmpSrc = src;
 		DrawWall(x, y, 100);
 		PutLonger();
-		imshow(secondWind, tmpSrc);
-		//cout << "Right button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+		imshow(secondWind, tmpSrc);		
 	}
 	else if (event == EVENT_MBUTTONDOWN)
 	{
-		imwrite("result.png", tmpSrc);
-		//cout << "Middle button of the mouse is clicked - position (" << x << ", " << y << ")" << endl;
+		imwrite("result.png", tmpSrc);		
 	}
 	else if (event == EVENT_MOUSEMOVE)
-	{					
-		//cout << "Mouse move over the window - position (" << x << ", " << y << ")" << endl;
+	{							
 	}
 }
 
